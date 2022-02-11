@@ -7,7 +7,7 @@
  **/
 
 import Popper from 'element-ui/src/utils/vue-popper';
-import debounce from 'element-ui/node_modules/throttle-debounce/debounce';
+import debounce from 'element-ui/node_modules/throttle-debounce/debounce'; //修改了这里的路径
 // import debounce from 'throttle-debounce/debounce';
 
 import { addClass, removeClass,on,off} from 'element-ui/src/utils/dom';
@@ -34,7 +34,7 @@ export default {
             default: 0
         },
         popperClass: String,
-        content: [String,Number],
+        content: [String,Number], //添加支持Numbe类型
         visibleArrow: {
             default: true
         },
